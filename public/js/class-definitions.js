@@ -216,6 +216,8 @@ var rainbow = {
  *
  */
 
+ var DNA = ["nucleatides","guanine","adenine","thymine","cytosine"];
+
 
 /* Step 16
  *
