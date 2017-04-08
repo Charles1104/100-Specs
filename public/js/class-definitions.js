@@ -555,6 +555,15 @@ function canTalkAbout(club){
  *
  */
 
+class Pen {
+  constructor(color){
+    this.color = color;
+  }
+
+  write(string){
+    return `${this.color}: ${string}`;
+  }
+}
 
 /* Step 31
  *
@@ -583,6 +592,27 @@ function canTalkAbout(club){
  *
  */
 
+class Garden{
+  constructor(plantsTotal, isWatered){
+    this.plantsTotal = plantsTotal;
+    this.isWatered = false;
+  }
+
+  water(){
+    this.isWatered = true;
+  }
+
+  grow(){
+    if(this.isWatered === false){
+      return false;
+    } else{
+      this.plantsTotal +=1;
+      this.isWatered = false;
+    }
+
+  }
+
+}
 
 /* Step 32
  *
