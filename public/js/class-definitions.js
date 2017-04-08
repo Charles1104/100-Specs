@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -395,6 +397,14 @@ function sahara_river (){
  *
  */
 
+ function browseURL(browser){
+    if(browsers[browser]){
+      return browsers[browser];
+    } else {
+      return false;
+    }
+ }
+
 
 /* Step 25
  *
@@ -406,6 +416,13 @@ function sahara_river (){
  *
  */
 
+function listLivingOrgClass(){
+  var string="";
+  for (i = 0; i < livingOrganismClassification.length; i++){
+    string += `"<li>""${livingOrganismClassification[i]}""</li>"`;
+  }
+  return `"<ul>"${string}"</ul>"`;
+}
 
 /* Step 26
  *
@@ -426,6 +443,16 @@ function sahara_river (){
  * @return {String}
  *
  */
+
+ function favoritePlanet(currentPlanet){
+    if(planets.indexOf(currentPlanet) === -1){
+      return `${currentPlanet} is not a planet!`;
+    } else {
+      return `I'm from ${currentPlanet}, but I wish I could go to ${planets[Math.floor(Math.random() * 7)]}.`;
+    }
+
+
+ }
 
 
 /* Step 27
