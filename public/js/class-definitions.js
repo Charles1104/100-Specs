@@ -825,6 +825,24 @@ class Scientist extends Person{
  *
  */
 
+class BankAccount{
+  constructor(balance,owner){
+    this.balance = balance;
+    this.owner = owner;
+  }
+  withdraw(amount){
+    this.balance -= amount;
+    Person.money += amount;
+  }
+  deposit(money){
+    this.balance += amount;
+    Person.money -= amount;
+  }
+  rob(amount){
+    Person.money += amount;
+  }
+
+}
 
 /* Step 37
  *
@@ -997,6 +1015,13 @@ class Scientist extends Person{
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
+
+class Animal{
+  constructor(species, gender){
+    this.species = species;
+    this.gender = gender;
+  }
+}
 
 
 /**
