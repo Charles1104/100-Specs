@@ -370,6 +370,19 @@ function sahara_river (){
  */
 
 
+ function drink(beer){
+    if(beers[beer] && Array.isArray(beers[beer])){
+      return `This ${beer} is ${beers[beer][0]} and ${beers[beer][1]}.`;
+    }
+    else if(beers[beer]){
+      return `This ${beer} is ${beers[beer]}.`;
+    }
+    else{
+      return false;
+    }
+ }
+
+
 /* Step 24
  *
  * Define a function named "browseURL" that takes
