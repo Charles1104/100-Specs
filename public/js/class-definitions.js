@@ -776,6 +776,33 @@ class Stapler{
  *
  */
 
+class Scientist extends Person{
+    constructor( name, money, age, gender,disciplines, discoveries){
+      super(name, money,age,gender);
+      this.disciplines = [];
+      this.discoveries = [];
+    }
+    addDiscipline(string){
+      this.disciplines.push(string);
+      return this.disciplines;
+    }
+   checkDiscipline(string){
+      if(this.disciplines.indexOf(string) >= 0){
+        return true;
+      } else{
+        return false;
+      }
+    }
+
+    addDiscovery(string){
+      this.discoveries.push(string);
+        if (this.discoveries.length <= 2){
+          return `I discovered ${this.discoveries.join(" and ")}.`;
+        } else {
+          return `I discovered ${this.discoveries.slice(0,this.discoveries.length -1).join(", ")}, and ${this.discoveries.slice(this.discoveries.length -1).join()}.`;
+        }
+    }
+}
 
 /* Step 36
  *
