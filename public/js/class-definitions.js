@@ -43,6 +43,8 @@ var sahara_animal = "The Addax";
  *
  */
 
+galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
+
 
 /* Step 6 φ
  *
