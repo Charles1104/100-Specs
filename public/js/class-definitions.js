@@ -1032,6 +1032,12 @@ class Animal{
  * @param {string} model The vehicle's model
  */
 
+class Vehicle{
+  constructor(make, model){
+    this.make = make;
+    this.model = model;
+  }
+}
 
 /**
  * Step 52
@@ -1043,6 +1049,15 @@ class Animal{
  *
  */
 
+class Shape{
+  constructor(sides){
+    if(Number.isInteger(sides) && sides >= 3){
+      this.sides = sides;
+    } else{
+      this.sides = null;
+    }
+  }
+}
 
 /**
  * Step 53
@@ -1052,6 +1067,13 @@ class Animal{
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
+ class Box{
+  constructor(contents, isOpen){
+    this.contents = contents;
+    this.isOpen = false;
+  }
+ }
+
 
 /**
  * Step 54
@@ -1060,6 +1082,11 @@ class Animal{
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
+class Door{
+  constructor(isOpen){
+    this.isOpen = true;
+  }
+}
 
 /**
  * Step 55
