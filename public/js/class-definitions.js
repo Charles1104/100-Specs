@@ -309,6 +309,9 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  *
  */
 
+function sahara_river (){
+  return 'Nile River';
+}
 
 /* Step 21
  *
@@ -320,6 +323,10 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  * @return {Number}
  *
  */
+
+ function addNumbers(num1,num2){
+  return num1 + num2;
+ }
 
 
 /* Step 22
@@ -333,6 +340,15 @@ var livingOrganismClassification = ["Kingdom","Phylum","Class","Order","Family",
  * @return {Bool}
  *
  */
+
+
+ function installLinux (string) {
+
+  if (linuxFlavors.indexOf(string) >= 0){
+    return true;
+  }
+  return false;
+ }
 
 
 /* Step 23
