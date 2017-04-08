@@ -450,8 +450,6 @@ function listLivingOrgClass(){
     } else {
       return `I'm from ${currentPlanet}, but I wish I could go to ${planets[Math.floor(Math.random() * 7)]}.`;
     }
-
-
  }
 
 
@@ -477,6 +475,23 @@ function listLivingOrgClass(){
  *   earnMoney
  *
  */
+
+class Person{
+  constructor(name,money,age,gender) {
+    this.name = name;
+    this.money = money;
+    this.age = age;
+    this.gender = gender;
+  }
+
+  spendMoney(amount){
+    return this.money -= amount;
+  }
+
+  earnMoney(amount){
+    return this.money += amount;
+  }
+}
 
 
 /* Step 28
