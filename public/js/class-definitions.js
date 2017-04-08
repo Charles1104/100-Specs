@@ -506,6 +506,13 @@ class Person{
  *
  */
 
+function purchaseLaptop(laptop){
+  if(laptopCosts[laptop]){
+    return laptopCosts[laptop].toString();
+  } else {
+    return -1;
+  }
+}
 
 /* Step 29
  *
