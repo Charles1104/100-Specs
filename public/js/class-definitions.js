@@ -53,6 +53,8 @@ galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
  *
  */
 
+ var golden_ratio = 1.61803398874;
+
 
 /* Step 7
  *
@@ -61,6 +63,7 @@ galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
  *
  */
 
+var earths_water_composition = 0.71;
 
 /* Step 8
  *
@@ -68,6 +71,8 @@ galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
  * and assign the value of club_name to "Fight Club"
  *
  */
+
+ var club_name = "Fight Club";
 
 
 /* Step 9
@@ -80,6 +85,11 @@ galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
  *   unknown => undefined
  */
 
+var gender = {
+  female: "female",
+  male: "male",
+  unknown: undefined
+};
 
 /* Step 10
  *
@@ -94,6 +104,13 @@ galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
  *
  */
 
+var princess_leia = {
+  name: "Leia Organa",
+  money: 890,
+  age: 20,
+  gender: gender.female
+};
+
 
 /* Step 11
  *
@@ -106,6 +123,14 @@ galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
  *   jsonformatter.curiousconcept.com => "104.28.5.70"
  *
  */
+
+var domains = {
+  "ycombinator.com": "198.41.190.47",
+ "laughingsquid.com": "162.159.247.97",
+ "slumlordhosting.com": "198.61.179.126",
+ "jsonformatter.curiousconcept.com": "104.28.5.70"
+
+};
 
 
 /* Step 12
@@ -122,6 +147,14 @@ galilean_moons = ["Io", "Europa", "Ganymede","Callisto"];
  *
  */
 
+var browsers = {
+  Chromium: "google.com",
+  Safari: "apple.com",
+  Opera: "opera.com",
+  Firefox: "mozilla.org",
+  Sleipnir: "fenrir-inc.com",
+  Konqueror: "konqueror.org",
+};
 
 /* Step 13
  *
